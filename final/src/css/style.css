@@ -1,0 +1,91 @@
+/* Reset some default styles to make styling more consistent across browsers */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply a basic style to the body for better readability */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Style the header */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+/* Style the main content */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the form */
+form {
+    margin-bottom: 20px;
+}
+
+/* Style the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* Style the table headers */
+th {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+/* Style the table cells */
+td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+/* Style the table row */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Style the table rank */
+td:first-child {
+    font-weight: bold;
+}
+
+/* Style the image inside the table */
+table img {
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 50%;
+}
+
+/* Style the link in the table */
+table a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Style the footer */
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

@@ -1,0 +1,104 @@
+/* Reset some default styles to make styling more consistent across browsers */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply a basic style to the body for better readability */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Style the main content container */
+main {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the edit and delete icons */
+.img {
+    text-align: right;
+}
+
+.img a {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.img img{
+    height: 100px;
+    width: 100px;
+}
+
+/* Style the product name */
+.name p {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Style the product icon */
+.icon img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: 10px;
+    margin-right: auto;
+}
+
+/* Style the product details */
+main p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Style the link to go back */
+main a:last-child {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Style the button container */
+.button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Style the link inside the button */
+.button a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #333;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the button */
+.button a:hover {
+    background-color: #555;
+}
+
+/* Style the footer */
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
