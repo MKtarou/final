@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+/*部分的リセットCSS*/
+input{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background-color: transparent;
+}
+
+body{
+	background-color: black;
+	color: #00ff00;
+}
+
+.music-table{
+	border-color: #00ff00;
+	border-collapse: collapse;
+}
+
+.music-button{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	text-decoration: none;
+	background-image: none;
+	border: none;
+	
+	background-color: #75ff75;
+	cursor: pointer;
+	color: black;
+	transition: all 0.35s ease;
+}
+.music-button:hover{
+	background-color: #00ff00;
+	cursor: pointer;
+	transform: translateY(-2px);	
+	
+}
+
+.music-text{
+	background-color: #00ff00;
+}

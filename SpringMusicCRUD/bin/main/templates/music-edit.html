@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="/music-style.css">
+</head>
+<body>
+	<h2>楽曲操作システム★編集</h2>
+	<table border="1" class="music-table">
+		<tr>
+			<th></th>
+			<th>曲名</th>
+			<th>歌手名</th>
+			<th></th>
+			<th></th>
+		</tr>
+		<tr th:each="music : ${model_list}">
+			<td th:text="${music.song_id}"></td>
+			<td th:text="${music.song_name}"></td>
+			<td th:text="${music.singer}"></td>
+			<td>
+				<form th:action="@{/music-updating}" method="POST" class="music-button">
+					<input type="hidden" name="song_id" th:value="${music.song_id}">
+                    <input type="submit" value="更新">
+				</form> 
+			</td>
+			<td>
+				<form th:action="@{/music-delete}" method="POST" class="music-button">
+                    <input type="hidden" name="song_id" th:value="${music.song_id}">
+                    <input type="submit" value="削除">
+                </form>
+			</td>
+		</tr>
+	</table>
+	<h1>SD3E 南　瑚太郎</h1>
+</body>
+</html>
